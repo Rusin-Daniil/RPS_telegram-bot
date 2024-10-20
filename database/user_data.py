@@ -1,6 +1,6 @@
 import json
 
-f = open('E:/projects/echo_bot/database/user_data_txt', 'r')
+f = open('E:/projects/RPS_telegram-bot/database/user_data_txt', 'r')
 data1 = f.read()
 data = json.loads(data1)
 f.close()

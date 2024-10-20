@@ -42,7 +42,7 @@ async def process_disagreement_command(message: Message):
 @router.message(F.text == "Мой результат")
 async def process_disagreement_command(message: Message):
 
-    f = open('E:/projects/echo_bot/database/user_data_txt', 'r')
+    f = open('E:/projects/RPS_telegram-bot/database/user_data_txt', 'r')
     readed_user_data = f.read()
     user_data_dict = json.loads(readed_user_data)
     f.close()

@@ -36,6 +36,6 @@ def update_user_data(datafile: dict, message: Message, game_result: str):
         elif result == 3:
             datafile[str(message.from_user.id)][2] += 1
 
-    f = open('E:/projects/echo_bot/database/user_data_txt', 'w')
+    f = open('E:/projects/RPS_telegram-bot/database/user_data_txt', 'w')
     f.write(json.dumps(datafile))
     f.close()
